@@ -26,7 +26,7 @@ app.include_router(crud_router)
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # Or use ["http://localhost:8080"] if serving frontend
+    allow_origins=["http://127.0.0.1:8000"],  # Or use ["http://localhost:8080"] if serving frontend
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
