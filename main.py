@@ -24,10 +24,15 @@ app.include_router(admin_router)
 app.include_router(teacher_router)
 app.include_router(crud_router)
 
+origins = [
+    "http://localhost:8000",
+    "http://127.0.0.1:8000",  # Optional fallback
+]
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # Or use ["http://localhost:8080"] if serving frontend
-    allow_credentials=False,
+    allow_origins=origins,
+    allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )

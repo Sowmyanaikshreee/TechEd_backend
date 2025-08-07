@@ -4,7 +4,7 @@ from passlib.hash import bcrypt
 from db import db
 import requests
 
-RECAPTCHA_SECRET_KEY = "6LckAoYrAAAAAO-StEFXdETM0q3OxE8l_ARvGoA0"
+RECAPTCHA_SECRET_KEY = "6LelZp0rAAAAAB_oa_OZgfjBJN4D08YAtPsVco5T"
 
 router = APIRouter()
 
